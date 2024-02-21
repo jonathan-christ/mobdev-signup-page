@@ -1,36 +1,30 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestMaui.MainPage">
-
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
-
-            <Label
-                Text="Register Page"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
-
-            <Button
-                x:Name="SignUpBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Sign up user"
-                Clicked="SignupUser"
-                HorizontalOptions="Fill" />
-
-            <Label x:Name="BruhBro"
-               Text="Click the Button above"
-               FontSize="18"
-               VerticalOptions="Center"
-               HorizontalOptions="Center" />
+        <VerticalStackLayout Padding="30,0"
+                             Spacing="25">
+            <Image Source="dotnet_bot.png"
+                   HeightRequest="185"
+                   Aspect="AspectFit"
+                   SemanticProperties.Description="dot net bot in a race car number eight" />
+            <Label Text="Register Page"
+                   Style="{StaticResource Headline}"
+                   SemanticProperties.HeadingLevel="Level1" />
+            <Entry x:Name="fname"
+                   HorizontalOptions="Fill" />
+            <Entry x:Name="lname"
+                   HorizontalOptions="Fill" />
+            <Entry x:Name="pass"
+                   HorizontalOptions="Fill" />
+            <Entry x:Name="confPass"
+                   HorizontalOptions="Fill" />
+            <Button x:Name="SignUpBtn"
+                    Text="Click me"
+                    SemanticProperties.Hint="Sign up user"
+                    Clicked="SignupUser"
+                    HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
