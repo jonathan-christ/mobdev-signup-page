@@ -1,0 +1,6 @@
+bin/
+obj/
+Platforms/
+Properties/
+%LOCALAPPDATA%/
+.vscode/
